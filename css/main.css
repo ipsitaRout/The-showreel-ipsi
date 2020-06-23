@@ -1913,9 +1913,9 @@ a#back-arrow {
   /* width: 34px;
   height: 34px; */
   left: auto;
-  top: 42px;
-  right: 0;
-  background-color: #333333ba;
+    top: 480px;
+    right: 0;
+    background-color: #333333ba;
 }
       section#section-one{
         /* z-index: 111; */
