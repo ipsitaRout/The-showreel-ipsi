@@ -277,7 +277,7 @@ header {
     height: auto; }
     @media screen and (max-width: 1600px) {
       #nav-content #contact-information {
-        transform: translate(-20%, -50%);
+       transform: translate(-20%, -50%);
         max-width: 980px; } }
     #nav-content #contact-information:after {
       content: "";
@@ -1863,7 +1863,7 @@ height: 100px;
         section#section-three h1{
           font-size: 18px;
     margin-left: 62px;
-    margin-top: 80px;
+    margin-top: 90px;
         }
         section#section-three .image-container span{
           width: 200px !important;
@@ -1880,7 +1880,8 @@ height: 100px;
           min-width: 340px;
           top: 9%;
           left: 3%;
-         margin-bottom: 4%;
+          
+          
           /* z-index: auto; */
       }
       #hover-panel-left:before, #hover-panel-left:after {
@@ -1913,9 +1914,10 @@ a#back-arrow {
   /* width: 34px;
   height: 34px; */
   left: auto;
-    top: 480px;
-    right: 0;
-    background-color: #333333ba;
+  bottom:auto;
+  top: 550px;
+  right: -40px;
+  background-color: #333333ba;
 }
       section#section-one{
         /* z-index: 111; */
