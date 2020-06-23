@@ -277,7 +277,7 @@ header {
     height: auto; }
     @media screen and (max-width: 1600px) {
       #nav-content #contact-information {
-        transform: translate(-50%, -50%);
+        transform: translate(-20%, -50%);
         max-width: 980px; } }
     #nav-content #contact-information:after {
       content: "";
