@@ -95,7 +95,7 @@ $(window).load(function() {
                 // Reset Set Four
                 $('#slide-1 .animation-set-4').css('transition-duration', set_four_duration).css('transition-delay', set_four_delay);
 
-                if ( getScrollTop < 250 ) {
+                if ( getScrollTop < 200 ) {
 
                     $('#slide-1 .animation-set-1').css('transition-delay', set_one_delay).css('left','0').css('opacity','1');
                     $('#slide-2 .animation-set-1').css('transition-delay', delay_zero).css('transition-duration', set_one_duration).css('left', fadeDistance).css('opacity','0');
@@ -115,7 +115,7 @@ $(window).load(function() {
                     $('#scroll-tip span.counter').text('1');
 
                 }
-                if ( getScrollTop > 250 && getScrollTop < 500 ) {
+                if ( getScrollTop > 200 && getScrollTop < 400 ) {
 
                     $('#slide-1 .animation-set-1').css('transition-delay', delay_zero).css('left', fadeDistanceBack).css('opacity','0');
                     $('#slide-2 .animation-set-1').css('transition-delay', set_one_delay).css('left','0').css('opacity','1');
@@ -139,7 +139,7 @@ $(window).load(function() {
                     $('#scroll-tip span.counter').text('2');
 
                 }
-                if ( getScrollTop > 500 && getScrollTop < 750 ) {
+                if ( getScrollTop > 400 && getScrollTop < 600 ) {
 
                     $('#slide-2 .animation-set-1').css('transition-delay', delay_zero).css('left', fadeDistanceBack).css('opacity','0');
                     $('#slide-3 .animation-set-1').css('transition-delay', set_one_delay).css('transition-duration', set_one_duration).css('left','0').css('opacity','1');
@@ -163,7 +163,7 @@ $(window).load(function() {
                     $('#scroll-tip span.counter').text('3');
 
                 }
-                if ( getScrollTop > 750 && getScrollTop < 1000 ) {
+                if ( getScrollTop > 600 && getScrollTop < 800 ) {
 
                     $('#slide-3 .animation-set-1').css('transition-delay', delay_zero).css('left', fadeDistanceBack).css('opacity','0');
                     $('#slide-4 .animation-set-1').css('transition-delay', set_one_delay).css('transition-duration', set_one_duration).css('left','0').css('opacity','1');
@@ -187,7 +187,7 @@ $(window).load(function() {
                     $('#scroll-tip span.counter').text('4');
 
                 }
-                if ( getScrollTop > 1000 ) {
+                if ( getScrollTop > 800 ) {
 
                     $('#slide-4 .animation-set-1').css('transition-delay', delay_zero).css('left', fadeDistanceBack).css('opacity','0');
                     $('#slide-5 .animation-set-1').css('transition-delay', set_one_delay).css('transition-duration', set_one_duration).css('left','0').css('opacity','1');
@@ -244,14 +244,14 @@ $(window).load(function() {
         // Get Scroll Distance
         var getScrollPos = $('#inner-wrapper').scrollTop();
 
-        if ( getScrollPos < 250 ) {
-            inner_wrapper_scroller.scrollTop(260);
-        } else if ( getScrollPos > 250 && getScrollPos < 500 ) {
-            inner_wrapper_scroller.scrollTop(560);
-        } else if ( getScrollPos > 500 && getScrollPos < 750 ) {
+        if ( getScrollPos < 200 ) {
+            inner_wrapper_scroller.scrollTop(210);
+        } else if ( getScrollPos > 200 && getScrollPos < 400 ) {
+            inner_wrapper_scroller.scrollTop(410);
+        } else if ( getScrollPos > 400 && getScrollPos < 600 ) {
+            inner_wrapper_scroller.scrollTop(610);
+        } else if ( getScrollPos > 600 && getScrollPos < 800 ) {
             inner_wrapper_scroller.scrollTop(810);
-        } else if ( getScrollPos > 750 && getScrollPos < 1000 ) {
-            inner_wrapper_scroller.scrollTop(1060);
         }
 
     });
@@ -263,14 +263,14 @@ $(window).load(function() {
         // Get Scroll Distance
         var getScrollPos = $('#inner-wrapper').scrollTop();
 
-        if ( getScrollPos > 250 && getScrollPos < 500 ) {
+        if ( getScrollPos > 200 && getScrollPos < 400 ) {
             inner_wrapper_scroller.scrollTop(0);
-        } else if ( getScrollPos > 500 && getScrollPos < 750 ) {
-            inner_wrapper_scroller.scrollTop(251);
-        } else if ( getScrollPos > 750 && getScrollPos < 1000 ) {
-            inner_wrapper_scroller.scrollTop(501);
-        } else if ( getScrollPos > 1000 ) {
-            inner_wrapper_scroller.scrollTop(751);
+        } else if ( getScrollPos > 400 && getScrollPos < 600 ) {
+            inner_wrapper_scroller.scrollTop(201);
+        } else if ( getScrollPos > 600 && getScrollPos < 800 ) {
+            inner_wrapper_scroller.scrollTop(401);
+        } else if ( getScrollPos > 800 ) {
+            inner_wrapper_scroller.scrollTop(601);
         }
 
     });
