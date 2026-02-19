@@ -61,6 +61,8 @@ $(window).load(function() {
 
     $('#slide-2 .animation-set-1, #slide-2 .animation-set-2, #slide-2 .animation-set-3, #slide-2 .animation-set-4').css('transition-duration', duration_reset).css('left', fadeDistance).css('opacity','0').css('transition-delay', delay_zero);
     $('#slide-3 .animation-set-1, #slide-3 .animation-set-2, #slide-3 .animation-set-3, #slide-3 .animation-set-4').css('transition-duration', duration_reset).css('left', fadeDistance).css('opacity','0').css('transition-delay', delay_zero);
+    $('#slide-4 .animation-set-1, #slide-4 .animation-set-2, #slide-4 .animation-set-3, #slide-4 .animation-set-4').css('transition-duration', duration_reset).css('left', fadeDistance).css('opacity','0').css('transition-delay', delay_zero);
+    $('#slide-5 .animation-set-1, #slide-5 .animation-set-2, #slide-5 .animation-set-3, #slide-5 .animation-set-4').css('transition-duration', duration_reset).css('left', fadeDistance).css('opacity','0').css('transition-delay', delay_zero);
 
 
     // Detect 'Page' Scroll
@@ -141,20 +143,68 @@ $(window).load(function() {
 
                     $('#slide-2 .animation-set-1').css('transition-delay', delay_zero).css('left', fadeDistanceBack).css('opacity','0');
                     $('#slide-3 .animation-set-1').css('transition-delay', set_one_delay).css('transition-duration', set_one_duration).css('left','0').css('opacity','1');
+                    $('#slide-4 .animation-set-1').css('transition-delay', delay_zero).css('transition-duration', set_one_duration).css('left', fadeDistance).css('opacity','0');
 
                     $('#slide-2 .animation-set-2').css('transition-delay', delay_zero).css('left', fadeDistanceBack).css('opacity','0');
                     $('#slide-3 .animation-set-2').css('transition-delay', set_two_delay).css('transition-duration', set_two_duration).css('left','0').css('opacity','1');
+                    $('#slide-4 .animation-set-2').css('transition-delay', delay_zero).css('transition-duration', set_two_duration).css('left', fadeDistance).css('opacity','0');
 
                     $('#slide-2 .animation-set-3').css('transition-delay', delay_zero).css('left', fadeDistanceBack).css('opacity','0');
                     $('#slide-3 .animation-set-3').css('transition-delay', set_three_delay).css('transition-duration', set_three_duration).css('left','0').css('opacity','1');
+                    $('#slide-4 .animation-set-3').css('transition-delay', delay_zero).css('transition-duration', set_three_duration).css('left', fadeDistance).css('opacity','0');
 
                     $('#slide-2 .animation-set-4').css('transition-delay', delay_zero).css('left', fadeDistanceBack).css('opacity','0');
                     $('#slide-3 .animation-set-4').css('transition-delay', set_four_delay).css('transition-duration', set_four_duration).css('left','0').css('opacity','1');
+                    $('#slide-4 .animation-set-4').css('transition-delay', delay_zero).css('transition-duration', set_four_duration).css('left', fadeDistance).css('opacity','0');
+
+                    // Update Arrows On Scroll
+                    $('a#scroll-forward').css('opacity','1');
+                    $('a#scroll-back').css('opacity','1');
+                    $('#scroll-tip span.counter').text('3');
+
+                }
+                if ( getScrollTop > 750 && getScrollTop < 1000 ) {
+
+                    $('#slide-3 .animation-set-1').css('transition-delay', delay_zero).css('left', fadeDistanceBack).css('opacity','0');
+                    $('#slide-4 .animation-set-1').css('transition-delay', set_one_delay).css('transition-duration', set_one_duration).css('left','0').css('opacity','1');
+                    $('#slide-5 .animation-set-1').css('transition-delay', delay_zero).css('transition-duration', set_one_duration).css('left', fadeDistance).css('opacity','0');
+
+                    $('#slide-3 .animation-set-2').css('transition-delay', delay_zero).css('left', fadeDistanceBack).css('opacity','0');
+                    $('#slide-4 .animation-set-2').css('transition-delay', set_two_delay).css('transition-duration', set_two_duration).css('left','0').css('opacity','1');
+                    $('#slide-5 .animation-set-2').css('transition-delay', delay_zero).css('transition-duration', set_two_duration).css('left', fadeDistance).css('opacity','0');
+
+                    $('#slide-3 .animation-set-3').css('transition-delay', delay_zero).css('left', fadeDistanceBack).css('opacity','0');
+                    $('#slide-4 .animation-set-3').css('transition-delay', set_three_delay).css('transition-duration', set_three_duration).css('left','0').css('opacity','1');
+                    $('#slide-5 .animation-set-3').css('transition-delay', delay_zero).css('transition-duration', set_three_duration).css('left', fadeDistance).css('opacity','0');
+
+                    $('#slide-3 .animation-set-4').css('transition-delay', delay_zero).css('left', fadeDistanceBack).css('opacity','0');
+                    $('#slide-4 .animation-set-4').css('transition-delay', set_four_delay).css('transition-duration', set_four_duration).css('left','0').css('opacity','1');
+                    $('#slide-5 .animation-set-4').css('transition-delay', delay_zero).css('transition-duration', set_four_duration).css('left', fadeDistance).css('opacity','0');
+
+                    // Update Arrows On Scroll
+                    $('a#scroll-forward').css('opacity','1');
+                    $('a#scroll-back').css('opacity','1');
+                    $('#scroll-tip span.counter').text('4');
+
+                }
+                if ( getScrollTop > 1000 ) {
+
+                    $('#slide-4 .animation-set-1').css('transition-delay', delay_zero).css('left', fadeDistanceBack).css('opacity','0');
+                    $('#slide-5 .animation-set-1').css('transition-delay', set_one_delay).css('transition-duration', set_one_duration).css('left','0').css('opacity','1');
+
+                    $('#slide-4 .animation-set-2').css('transition-delay', delay_zero).css('left', fadeDistanceBack).css('opacity','0');
+                    $('#slide-5 .animation-set-2').css('transition-delay', set_two_delay).css('transition-duration', set_two_duration).css('left','0').css('opacity','1');
+
+                    $('#slide-4 .animation-set-3').css('transition-delay', delay_zero).css('left', fadeDistanceBack).css('opacity','0');
+                    $('#slide-5 .animation-set-3').css('transition-delay', set_three_delay).css('transition-duration', set_three_duration).css('left','0').css('opacity','1');
+
+                    $('#slide-4 .animation-set-4').css('transition-delay', delay_zero).css('left', fadeDistanceBack).css('opacity','0');
+                    $('#slide-5 .animation-set-4').css('transition-delay', set_four_delay).css('transition-duration', set_four_duration).css('left','0').css('opacity','1');
 
                     // Update Arrows On Scroll
                     $('a#scroll-forward').css('opacity','0');
                     $('a#scroll-back').css('opacity','1');
-                    $('#scroll-tip span.counter').text('3');
+                    $('#scroll-tip span.counter').text('5');
 
                 }
 
@@ -198,6 +248,10 @@ $(window).load(function() {
             inner_wrapper_scroller.scrollTop(260);
         } else if ( getScrollPos > 250 && getScrollPos < 500 ) {
             inner_wrapper_scroller.scrollTop(560);
+        } else if ( getScrollPos > 500 && getScrollPos < 750 ) {
+            inner_wrapper_scroller.scrollTop(810);
+        } else if ( getScrollPos > 750 && getScrollPos < 1000 ) {
+            inner_wrapper_scroller.scrollTop(1060);
         }
 
     });
@@ -213,6 +267,10 @@ $(window).load(function() {
             inner_wrapper_scroller.scrollTop(0);
         } else if ( getScrollPos > 500 && getScrollPos < 750 ) {
             inner_wrapper_scroller.scrollTop(251);
+        } else if ( getScrollPos > 750 && getScrollPos < 1000 ) {
+            inner_wrapper_scroller.scrollTop(501);
+        } else if ( getScrollPos > 1000 ) {
+            inner_wrapper_scroller.scrollTop(751);
         }
 
     });
